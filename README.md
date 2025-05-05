@@ -1,13 +1,19 @@
 # GAT562
 GAT562 Mesh Trial Tracker
- GAT562 Mesh Trial Tracker is a communication and positioning terminal designed based on nRF52840 and SX1262, supporting LoRa and Bluetooth 5.0. It integrates power interface (5V USB, 2500mA lithium battery), built-in 1.3-inch TFT display and GPS module, with powerful remote communication capability, scalability and low-power design.
- GAT562 Mesh Trial Tracker is fully compatible with Meshtastic and can update the experience with the latest features in a Meshtastic network. Meshtastic is a community-driven open source project that allows reasonable use of LoRa radio for remote off-grid communication in areas without any existing or reliable communication infrastructure.
-superiority
-Decentralization: It does not rely on the central server or base station. Each device can be used as a relay node to forward information. There is no single point of failure in the network. Even if some nodes have problems, it will not affect the overall communication, and the reliability and stability of the network are higher.
-Long-distance communication: Using wireless communication technologies such as LoRa, communication can be realized over several kilometers or even farther distances, with obvious advantages in remote areas without network coverage or in vast outdoor Spaces.
-Offline communication: No need to rely on the Internet or mobile network, can communicate normally in places without cell phone signal or Wi-Fi, to meet the communication needs of special scenarios.
-Low power consumption: The low-power Bluetooth Low Power (BLE) technology is adopted, which consumes less battery for hardware devices, can be used for a long time, is suitable for portable devices, and reduces the frequency and difficulty of charging.
-Open source and customizable: The software is open source, and developers can freely modify and expand the code according to their own needs, carry out secondary development, add new functions or optimize existing functions, and meet the personalized needs of different users.
-Cross-platform compatibility: It supports a variety of hardware devices and operating systems, and users can choose their own devices to access the network, such as mobile phones, tablets, etc., so that users of different devices can communicate with each other.
-Low cost: The hardware used is usually the cheaper open source hardware module, which is much cheaper than professional communication equipment and easy to promote and use.
-User-friendly interface: An intuitive and simple user interface is designed, so that even non-technical personnel can quickly get started, and it is convenient for users to perform device configuration, information sending, location sharing and other operations.
+GAT562 Mesh Trial Tracker是基于nRF52840和SX1262设计的通讯定位终端，支持LoRa和蓝牙5.0。集成电源接口(5V USB、2500mA锂电池），内置1.3英寸TFT显示屏和GPS模块，具有强大的远程通信能力、可扩展性和低功耗设计。
+GAT562 Mesh Trial Tracker与Meshtastic完全兼容，可以在Meshtastic网络中更新体验最新的功能。Meshtastic是一个社区驱动的开源项目，它允许在没有任何现有或可靠通信基础设施的地区合理的使用LoRa无线电进行远程离网通信。
+GAT562 Mesh Trial Tracker与RAK4631模组IO完全兼容，可以烧录RAK4631固件；
+优势
+去中心化：不依赖中央服务器或基站，每个设备都可作为中继节点转发信息，网络中没有单点故障，即使部分节点出现问题，也不影响整体通信，网络的可靠性和稳定性更高。
+长距离通信：利用 LoRa 等无线通信技术，可实现数公里甚至更远距离的通信，在无网络覆盖的偏远地区或广阔的户外空间优势明显。
+离线通信：无需依赖互联网或移动网络，在没有手机信号或 Wi-Fi 的地方也能正常通信，满足特殊场景下的通信需求。
+低功耗：采用低功耗的蓝牙低功耗（BLE）技术等，对硬件设备的电池消耗较小，可长时间使用，适合携带式设备，减少了充电的频率和难度。
+开源可定制：软件开源，开发者能根据自身需求自由修改和扩展代码，进行二次开发，添加新功能或优化现有功能，满足不同用户的个性化需求。
+跨平台兼容：支持多种硬件设备和操作系统，用户可选择适合自己的设备接入网络，如手机、平板电脑等，方便不同设备的用户之间进行通信。
+成本较低：使用的硬件通常是价格较为低廉的开源硬件模块，相比专业的通信设备，成本大幅降低，易于推广和使用。
+用户界面友好：设计了直观、简洁的用户界面，即使是非技术人员也能快速上手，方便用户进行设备配置、信息发送、位置共享等操作。
+
+DIY说明
+将gerber文件整个上传至嘉立创PCB，选择FR4材质——数量（根据自身需求）——PCB厚度选择1.0mm——其他都按照默认选择下单即可完成PCB下单制作。
+根据BOM文件购买对应规格的元器件，GAT562 mehs module需要到淘宝店铺（加特物联）下单购买，其余元器件按照BOM规格在立创商城即可下单购买。
+按照GAT562 Mesh Trial Tracker V1.3 Top贴片图进行手工焊接，焊接完成后进行组装测试，恭喜你完成了属于自己的meshtastic设备。
